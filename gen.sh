@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh-keygen -trsa -N "passw0rd" -f ./encrypted_rsa
+rm *.pem *.pub *_ca
 
 ssh-keygen -trsa -N "" -f ./rsa_ca
 ssh-keygen -tdsa -N "" -f ./dsa_ca
